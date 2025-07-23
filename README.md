@@ -11,7 +11,10 @@ This repository is structured to follow proper semantic import versioning, with 
 
 - `v1.0.0`: Initial release with `Add(int, int) int`
 - `v1.0.1`: Added GoDoc comments
+- `v1.1.0`: Extended `Add` to support any number of `int` values using a variadic parameter
 - `v2.0.0`: Breaking change – converted `Add` to a generic function using Go 1.18+ type parameters and `golang.org/x/exp/constraints`
+- `v2.1.0`: Extended generic `Add` to support any number of values using a variadic parameter
+
 
 ## Install
 
