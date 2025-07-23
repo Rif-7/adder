@@ -11,7 +11,11 @@ type Number interface {
 	constraints.Integer | constraints.Float
 }
 
-// Add returns the sum of two values of type T.
-func Add[T Number](x, y T) T {
-	return x + y
+// Add returns the sum of any number of values of type Number.
+func Add[T Number](vals ...T) T {
+	var total T
+	for _, v := range vals {
+		total += v
+	}
+	return total
 }
